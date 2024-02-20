@@ -16,7 +16,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 3), () {
+    Timer(Duration(seconds: 2), () {
       Navigator.push(context, MaterialPageRoute(builder: (context)=>Question()));
     });
   }
@@ -24,13 +24,13 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.yellow,
+        backgroundColor: Colors.black,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
               child: Image.network(
-                  'https://thumbs.dreamstime.com/z/quiz-question-mark-sign-icon-questions-answers-game-symbol-classic-flat-vector-181034628.jpg'),
+                  'https://png.pngtree.com/png-clipart/20230120/ourmid/pngtree-quiz-design-vector-clipart-png-image_6569418.png'),
             ),
 
           ],
